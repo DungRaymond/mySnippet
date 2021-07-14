@@ -65,10 +65,6 @@ Maven
 ```
 choco install maven
 ```
-Visual Studio 2019 Comm
-```
-choco install visualstudio2019community
-```
 cUrl
 ```
 choco install curl
