@@ -1,0 +1,57 @@
+Function ghadd {
+	git add *
+}
+Function ghcm {
+	param($message)
+	git commit -m $message
+	
+}
+Function masterp {
+	git push origin master
+}
+Function mainp {
+	git push -u origin main
+}
+Function herokp {
+	git push heroku master
+}
+Function pull {
+	params($branch)
+	git pull origin $branch
+}
+Function mon {
+	param($filename)
+	nodemon $filename
+}
+Function gd {
+	param($path)
+	Set-Location G:\$path
+}
+Function newfile {
+	param($filename)
+	New-Item -Path . -Name $filename -ItemType "file" -Value ""
+}
+Function ghremo {
+	param($gitname)
+	git remote add origin https://github.com/DungRaymond/$gitname
+}
+Function branch {
+	param($branch)
+	git branch -M $branch
+}
+Function focal {
+	wsl.exe
+}
+Function arts {
+	php artisan serve
+}
+
+Set-Alias -Name np -Value notepad
+Set-Alias -Name npp -Value notepad++
+Set-Alias -Name admin4 -Value pgAdmin4
+Clear-Host
+Import-Module posh-git
+Import-Module oh-my-posh
+Set-PoshPrompt -Theme paradox
+
+
