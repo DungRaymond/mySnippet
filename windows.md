@@ -17,10 +17,6 @@ Powershell Core 7.x
 ```
 choco install powershell-core
 ```
-Golang
-```
-choco install golang
-```
 Slack
 ```
 choco install slack
@@ -81,6 +77,14 @@ WGet
 ```
 choco install wget
 ```
+Figma
+```
+choco install figma
+```
+Flow ( alternative for Trello )
+```
+choco install flow
+```
 Libre Office 
 ```
 choco install libreoffice-fresh
@@ -92,6 +96,18 @@ choco install notepadplusplus.install
 Python
 ```
 choco install python
+```
+Dart
+```
+choco install dart-sdk
+```
+Golang
+```
+choco install golang
+```
+Flutter
+```
+choco install flutter
 ```
 Git
 ```
