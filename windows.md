@@ -121,6 +121,10 @@ Foxit reader
 ```
 choco install foxitreader
 ```
+VLC
+```
+choco install vlc
+```
 iTunes
 ```
 choco install itunes
