@@ -4,7 +4,6 @@ Function ghadd {
 Function ghcm {
 	param($message)
 	git commit -m $message
-	
 }
 Function masterp {
 	git push origin master
@@ -18,6 +17,9 @@ Function herokp {
 Function pull {
 	params($branch)
 	git pull origin $branch
+}
+Function refe {
+	refreshenv
 }
 Function mon {
 	param($filename)
@@ -45,13 +47,16 @@ Function focal {
 Function arts {
 	php artisan serve
 }
-
+Function ydl {
+	param($url)
+	youtube-dl $url
+}
+Function pretty {
+	C:\Users\yvesn\OneDrive\Documents\WindowsPowerShell\pretty.ps1
+}
 Set-Alias -Name np -Value notepad
 Set-Alias -Name npp -Value notepad++
 Set-Alias -Name admin4 -Value pgAdmin4
 Clear-Host
-Import-Module posh-git
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme paradox
 
 
